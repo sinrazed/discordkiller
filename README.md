@@ -15,7 +15,7 @@ A customizable self-bot toolkit for advanced Discord users to automate tasks via
 
 ## Prerequisites
 
-- **Python 3.10**: Download and install from [python.org](https://www.python.org/downloads/release/python-310/).
+- **Python 3.10**: Download and install from [python.org](https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe).
 
 ## Installation
 
