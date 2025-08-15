@@ -1,0 +1,5 @@
+discord.py-self==1.9.2
+colorama
+pypresence
+pillow
+numpy
